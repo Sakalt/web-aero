@@ -118,7 +118,7 @@ export class Window implements Component {
     const content = document.createElement('div');
     const button = document.createElement('button');
 
-    button.innerText = 'Close Window';
+    button.innerText = 'ウィンドウを閉じる';
     button.addEventListener('click', () => {
       eventEmitter.emit(ApplicationCloseEvent, { applicationId: this.id });
     });
